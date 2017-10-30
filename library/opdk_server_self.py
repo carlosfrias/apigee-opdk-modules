@@ -1,7 +1,5 @@
 import requests
-from requests import ConnectionError
 from requests.exceptions import RequestException
-import sys
 from requests.auth import HTTPBasicAuth
 from ansible.module_utils.basic import *
 
