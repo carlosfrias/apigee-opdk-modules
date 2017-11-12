@@ -1,5 +1,4 @@
 import requests
-from requests.packages import urllib3
 from requests.exceptions import RequestException
 from requests.auth import HTTPBasicAuth
 from ansible.module_utils.basic import *
