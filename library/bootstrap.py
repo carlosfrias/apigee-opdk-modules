@@ -42,7 +42,7 @@ def main():
     module = AnsibleModule(
             argument_spec=dict(
                     url=dict(required=False, type='str', default='http://software.apigee.com'),
-                    version=dict(required=False, type='str', choices=['4.16.01', '4.16.05', '4.16.09', '4.17.01','4.17.05', '4.17.09'], default='4.17.05'),
+                    version=dict(required=False, type='str', choices=['4.16.01', '4.16.05', '4.16.09', '4.17.01','4.17.05', '4.17.09', '4.18.01'], default='4.17.09'),
                     dest_dir=dict(required=False, type='str', default='/tmp'),
                     user_name = dict(required=False, type='str'),
                     password = dict(required=False, type='str')
