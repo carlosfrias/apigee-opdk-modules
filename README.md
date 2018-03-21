@@ -1,7 +1,8 @@
-Role Name
+Apigee OPDK Modules
 =========
 
-A brief description of the role goes here.
+This purpose of this role is to contain OPDK specific modules that have been prepared to 
+install and configure OPDK. 
 
 Requirements
 ------------
@@ -38,7 +39,7 @@ Author Information
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
 <!-- BEGIN Google Required Disclaimer -->
 
-# Required Disclaimer
+# Not Google Product Clause
 
 This is not an officially supported Google product.
 <!-- END Google Required Disclaimer -->
