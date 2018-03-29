@@ -1,10 +1,13 @@
 Apigee OPDK Modules
 =========
 
-This role is used to distribute custom Apigee OPDK modules used throughout
+This role is used to distribute custom Ansible modules that support Apigee OPDK installation, configuration and maintenance throughout
 the framework. This is a code only module. 
 
-| Module Name
+| Ansible Module Name | Description |
+| --- | --- |
+| cache.py | Implemented a generic caching module to enable saving of attributes more cleanly and clearly than provided mechanisms. |
+| opdk_server_self.py | This modules obtains OPDK components that self report and caches those results as attributes that are suitable for other operations |
 
 Requirements
 ------------
