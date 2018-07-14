@@ -7,7 +7,7 @@
       pattern: '*.yml'
       file_type: file
       hidden: yes
-      recurse: yes
+      recurse: no
     with_items: "{{ property_folders }}"
     register: props
 
