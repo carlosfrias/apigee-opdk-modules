@@ -3,6 +3,7 @@
 - name: Load variables
   include_vars:
     dir: "{{ item | expanduser }}"
-    extensions: [yml,json]
+    depth: 1
+    extensions: [yml]
   with_items: "{{ property_folders }}"
   when: property_folders is defined
