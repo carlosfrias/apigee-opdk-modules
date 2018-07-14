@@ -4,5 +4,6 @@
   include_vars:
     dir: "{{ item | expanduser }}"
     extensions: ["yml"]
+    ignore_files: ["json"]
   with_items: "{{ property_folders }}"
   when: property_folders is defined
