@@ -1,2 +1,7 @@
 ---
 # tasks file for /usr/local/google/home/friasc/apigee-workspace/apigee-opdk-role-workspace/apigee-opdk-modules
+- name: Load variables
+  include_vars:
+    dir: "{{ item | expanduser }}"
+  with_items: "{{ property_folders }}"
+  when: property_folders is defined
