@@ -18,4 +18,5 @@
     - "{{ props.results }}"
     - files
 
+  delegate_to: localhost
   when: property_folders is defined
