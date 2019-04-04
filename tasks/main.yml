@@ -7,9 +7,9 @@
     file_type: file
     hidden: yes
     recurse: no
-  with_items: "{{ property_folders }}"
+  with_items: "{{ property_folders|default([]) }}"
   register: props
-  when: property_folders is defined and property_folders | trim | length > 0
+  when: item is defined
   delegate_to: localhost
 
 - name: Load variables
