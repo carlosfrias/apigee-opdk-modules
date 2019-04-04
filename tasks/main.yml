@@ -18,5 +18,5 @@
   with_subelements:
   - "{{ props.results }}"
   - files
-  when: props is defined
+  when: props is defined and props.results is defined
   delegate_to: localhost
