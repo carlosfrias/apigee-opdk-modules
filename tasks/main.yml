@@ -4,7 +4,7 @@
   - name: Find yml property files
     find:
       path: '{{ item }}'
-      pattern: '*.yml'
+      pattern: '*-properties.yml'
       file_type: file
       hidden: yes
       recurse: no
