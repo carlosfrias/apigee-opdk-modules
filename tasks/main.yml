@@ -19,4 +19,4 @@
     - files
 
   delegate_to: localhost
-  when: property_folders is defined
+  when: property_folders is defined and property_folders | length > 0
