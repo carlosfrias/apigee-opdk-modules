@@ -18,8 +18,6 @@
     - "{{ props.results }}"
     - files
 
-  delegate_to: localhost
-
   - name: Update cache with key and value
     set_fact:
       cacheable: yes
@@ -89,4 +87,5 @@
       enable_system_check: '{{ enable_system_check }}'
       opdk_baas_silent_install_file_path: '{{ opdk_resources_path }}/edge-baas-response.conf'
 
+  delegate_to: localhost
   when: property_folders is defined and property_folders | length > 0
